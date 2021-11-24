@@ -4,6 +4,8 @@ import { ParamValues } from "@resoc/core";
 import { createImage } from "@resoc/create-img";
 import { TwitterClient } from "twitter-api-client";
 
+export const BannerFileName = 'twitter-banner.png';
+
 export const initTwitterClient = (): TwitterClient => {
   const twitterApiKey = process.env.TWITTER_API_KEY;
   const twitterApiSecret = process.env.TWITTER_API_SECRET;

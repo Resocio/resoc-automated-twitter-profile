@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "generate-banner": "ts-node src/generate-banner",
+    "update-banner": "ts-node src/update-banner",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
