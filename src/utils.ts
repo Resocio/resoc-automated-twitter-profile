@@ -1,5 +1,7 @@
 require('dotenv').config();
 
+import { ParamValues } from "@resoc/core";
+import { createImage } from "@resoc/create-img";
 import { TwitterClient } from "twitter-api-client";
 
 export const initTwitterClient = (): TwitterClient => {
@@ -17,4 +19,13 @@ export const initTwitterClient = (): TwitterClient => {
     accessToken: twitterAccessToken,
     accessTokenSecret: twitterAccessTokenSecret
   });
+};
+
+export const createBanner = async (parameters: ParamValues, outputFileName: string) => {
+  await createImage(
+    'resoc-templates/banner/resoc.manifest.json',
+    parameters,
+    { width: 1800, height: 600 },
+    outputFileName
+  );
 };
