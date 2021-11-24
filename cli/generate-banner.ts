@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import { bannerTemplateParameters } from '../template-parameters';
 import { createImage } from '@resoc/create-img';
 

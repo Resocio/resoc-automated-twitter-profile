@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@resoc/core": "^0.9.1",
-    "@resoc/create-img": "^0.9.1"
+    "@resoc/create-img": "^0.9.1",
+    "dotenv": "^10.0.0"
   }
 }
