@@ -1,7 +1,7 @@
 name: Update Banner
 on:
   schedule:
-    - cron: '05 *   * * *'
+    - cron: '23 *   * * *'
 jobs:
   Update-Banner:
     runs-on: ubuntu-latest
