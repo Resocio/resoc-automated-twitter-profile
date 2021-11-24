@@ -5,6 +5,7 @@ export const bannerTemplateParameters = async (twitterClient: TwitterClient): Pr
   const user  = await twitterClient.accountsAndUsers.usersShow({ screen_name: '@ph_bernard' });
 
   return {
+    name: user.name,
     followerCount: user.followers_count.toString()
   }
 };
