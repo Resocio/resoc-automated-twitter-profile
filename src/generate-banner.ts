@@ -1,10 +1,12 @@
-require('dotenv').config();
-
 import { bannerTemplateParameters } from '../template-parameters';
 import { createImage } from '@resoc/create-img';
+import { TwitterClient } from 'twitter-api-client';
+import { initTwitterClient } from './utils';
 
 (async () => {
-  const parameters = await bannerTemplateParameters();
+  const twitterClient = initTwitterClient();
+
+  const parameters = await bannerTemplateParameters(twitterClient);
 
   await createImage(
     'resoc-templates/banner/resoc.manifest.json',
