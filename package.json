@@ -21,5 +21,9 @@
     "@types/node": "^16.11.10",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@resoc/core": "^0.9.1",
+    "@resoc/create-img": "^0.9.1"
   }
 }
